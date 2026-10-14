@@ -6,6 +6,10 @@ com versionamento [SemVer](https://semver.org/lang/pt-BR/).
 ## [0.2.0] — 2026-10-14
 Integração ao catálogo: orçamento de description e ponteiros entre as irmãs novas.
 
+### Corrigido
+
+- `check-postmortem.sh` declara a exceção de strict mode (coletor) e sai com o status real, sem `exit 0` incondicional.
+
 ### Alterado
 - `description` <=190 (era 247; o gate avisava).
 - Segredo vazado: `severidade.md` e a fronteira citam `/git-leak` (`schematize-git`); banco em incidente aponta `schematize-postgres`.

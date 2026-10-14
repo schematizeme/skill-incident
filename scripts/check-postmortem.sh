@@ -9,6 +9,7 @@
 # Regras: secao-ausente, timeline-curta, sem-mitigacao, impacto-sem-numero, acao-sem-dono,
 #         acao-sem-prazo, sem-acoes, culpa-pessoa, dados-pessoais-indefinido, anpd-sem-decisao,
 #         causa-sem-porques.
+# strict-ok: COLETOR — varre todos os postmortems e soma os achados; com `set -e` o primeiro `grep` sem casamento (resultado normal) abortaria (`schematize-shell` -> `references/piso.md` secao 1)
 set -uo pipefail
 
 alvo="${1:-.}"
@@ -99,5 +100,4 @@ for f in "${arquivos[@]}"; do
   fi
 done
 
-[ "$total" -eq 0 ] || { echo "check-postmortem: $total achado(s)"; exit 1; }
-exit 0
+if [ "$total" -ne 0 ]; then echo "check-postmortem: $total achado(s)"; exit 1; fi
