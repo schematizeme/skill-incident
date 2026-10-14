@@ -37,3 +37,5 @@
 
 Mitigado != resolvido. **Mitigado**: impacto parou. **Resolvido**: causa tratada ou contornada de
 forma estável, alertas limpos, status page encerrada, postmortem agendado (SEV1/2: em até 5 dias úteis).
+
+Spam em massa por bot ou token de bot vazado: desligue o bot e revogue o token primeiro; ver `schematize-bots → references/ambientes-e-efeito-externo.md`.
