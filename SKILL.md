@@ -3,7 +3,7 @@ name: schematize-incident
 metadata:
   version: 0.1.0
 description: >-
-  Resposta a incidente: SEV1-4 com critério objetivo, papéis (IC, comms, escriba), mitigar antes de diagnosticar, LGPD/ANPD e postmortem blameless com action items. Use ao declarar incidente ou escrever postmortem. Alertas: schematize-observability.
+  Resposta a incidente: SEV1-4 objetivo, papéis (IC, comms), mitigar antes de diagnosticar, LGPD/ANPD, postmortem blameless. Use ao declarar incidente. Alertas: schematize-observability.
 ---
 <!-- cross-skill: observabilidade.md, efeitos-externos.md -> schematize-engineering -->
 
@@ -50,8 +50,10 @@ Detectar e alertar é da `schematize-observability`; recuperar de desastre é da
 | Formato de runbook e de ADR | `schematize-docs` | `schematize-docs → references/runbooks.md`, `references/adr.md` |
 | Onde o postmortem mora (`<projeto>_archive/`), handoff | `schematize-archive` | repositório privado, criticidade 0 |
 | Exploração/segurança como achado; teste de intrusão | `schematize-pentest` | lado ofensivo; aqui só a resposta |
+| Segredo commitado/credencial no repo: rito de rotação e limpeza | `schematize-git` | `/git-leak`; `schematize-git → references/segredos.md` |
 | Identidade, sessão, revogação de credencial | `schematize-iam` | `schematize-iam` (revogar tokens/chaves é ação de mitigação) |
 | Efeito externo indevido (e-mail em massa, cobrança, webhook) | base | `schematize-engineering → references/efeitos-externos.md` |
+| Operar o banco no incidente (failover, restore, PITR) | `schematize-postgres` | `schematize-postgres → references/replicacao-e-failover.md`, `backup-e-pitr.md` |
 | Rollback de migração | `schematize-database` | expand-contract: o que permite voltar |
 
 ## Comandos (Claude Code)

@@ -19,7 +19,8 @@ Os limiares de burn-rate acompanham `schematize-observability → references/slo
 
 1. **Dado pessoal exposto é SEV1 até prova em contrário**, e dispara `references/lgpd.md` em paralelo.
 2. **Segurança** (credencial vazada, acesso indevido) é no mínimo SEV2 e vai para o canal de segurança
-   restrito, não para o canal aberto.
+   restrito, não para o canal aberto. Segredo commitado: rode `/git-leak` (`schematize-git`) em
+   paralelo: rotacionar primeiro, medir, limpar o código, só então decidir sobre o histórico.
 3. **Reclassifique em voz alta** no canal (`SEV2 -> SEV1, motivo`). A timeline registra cada mudança.
 4. Severidade mede **impacto**, não esforço nem culpa: bug trivial que derruba pagamentos é SEV1.
 5. Efeito externo indevido (e-mail em massa, cobrança, webhook de terceiro disparado de verdade) é

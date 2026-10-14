@@ -3,6 +3,14 @@
 Todas as mudanças relevantes deste pacote, no formato [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/),
 com versionamento [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.2.0] — 2026-10-14
+Integração ao catálogo: orçamento de description e ponteiros entre as irmãs novas.
+
+### Alterado
+- `description` <=190 (era 247; o gate avisava).
+- Segredo vazado: `severidade.md` e a fronteira citam `/git-leak` (`schematize-git`); banco em incidente aponta `schematize-postgres`.
+- Motivo: o catálogo estourou o orçamento de listagem com 45 skills; cada fronteira aponta a dona em vez de duplicar.
+
 ## [0.1.0] — 2026-10-14
 Primeira versão. Faltava a dona do ciclo humano do incidente: a observabilidade detecta, a infra recupera, mas
 ninguém mandava classificar, comandar, comunicar, tratar dado pessoal e aprender. O incidente dos 5.000 e-mails
