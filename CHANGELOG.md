@@ -3,6 +3,12 @@
 Todas as mudanças relevantes deste pacote, no formato [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/),
 com versionamento [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.3.0] — 2026-10-15
+### Alterado
+- Fronteira e `references/recorrencia.md` apontam para `schematize-regression`: o postmortem exige o teste
+  de regressão (visto vermelho antes do fix) e o `git bisect` do commit culpado; o COMO fica lá.
+- Porquê: a ação de prevenção "teste que reproduz" não tinha dona do procedimento.
+
 ## [0.2.1] — 2026-10-14
 Ponteiro para a skill nova `schematize-bots` (piso curto, sem duplicar).
 

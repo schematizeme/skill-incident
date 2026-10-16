@@ -50,6 +50,7 @@ Detectar e alertar é da `schematize-observability`; recuperar de desastre é da
 | Formato de runbook e de ADR | `schematize-docs` | `schematize-docs → references/runbooks.md`, `references/adr.md` |
 | Onde o postmortem mora (`<projeto>_archive/`), handoff | `schematize-archive` | repositório privado, criticidade 0 |
 | Exploração/segurança como achado; teste de intrusão | `schematize-pentest` | lado ofensivo; aqui só a resposta |
+| Teste de regressão do incidente (vermelho antes do fix), `git bisect` do commit culpado | `schematize-regression` | `schematize-regression → references/incidente-e-metricas.md`, `references/bisect.md`; aqui só se exige que exista (postmortem) |
 | Segredo commitado/credencial no repo: rito de rotação e limpeza | `schematize-git` | `/git-leak`; `schematize-git → references/segredos.md` |
 | Identidade, sessão, revogação de credencial | `schematize-iam` | `schematize-iam` (revogar tokens/chaves é ação de mitigação) |
 | Efeito externo indevido (e-mail em massa, cobrança, webhook) | base | `schematize-engineering → references/efeitos-externos.md` |

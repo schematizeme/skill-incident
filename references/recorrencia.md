@@ -18,7 +18,9 @@ só pegou por sorte; ou um postmortem cuja ação é "ter mais cuidado". Declare
 3. **Gate determinístico** no CI que reprova a violação (script `check-*.sh` com teste vermelho plantado).
    Piso sem gate de máquina volta a ser atenção humana.
 
-Mais: o teste que reproduz o incidente entra na suíte (regressão), e o alerta que o detectaria entra no
+Mais: o teste que reproduz o incidente entra na suíte (regressão) — visto VERMELHO antes do fix, com
+o commit culpado localizado por `git bisect` quando a causa não é óbvia (`schematize-regression` →
+`references/incidente-e-metricas.md`, `references/bisect.md`) —, e o alerta que o detectaria entra no
 código (`schematize-observability → references/slo-alertas.md`).
 
 ## 3. Anti-padrões
